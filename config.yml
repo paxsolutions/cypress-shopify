@@ -1,0 +1,10 @@
+development:
+  password: ${THEMEKIT_PASSWORD}
+  theme_id: ${THEMEKIT_DEV_ID}
+  store: ${THEMEKIT_STORE}
+  ignore_files: ${THEMEKIT_IGNORE_FILES}
+staging:
+  password: ${THEMEKIT_PASSWORD}
+  theme_id: ${THEMEKIT_STAGING_ID}
+  store: ${THEMEKIT_STORE}
+  ignore_files: ${THEMEKIT_IGNORE_FILES}
