@@ -27,7 +27,7 @@ Build and deploy theme to development and start browserSync
 
 You should see the following (safe to ignore errors)
 
-![Local proxy](https://www.evernote.com/l/AiG14-ssmE5H8JFbh3tuZaCwgr-Oreg50ss)
+![Local proxy](../assets/Cursor_and_npm_run_start.png)
 
 Start Cypress
 
@@ -35,11 +35,11 @@ Start Cypress
 
 Everything should be up and running and you should be able to run the example spec.
 
-![cypress](https://www.evernote.com/l/AiEJooe3BypJBY6E1O64nZf-eNb-fAuJGQs)
+![cypress](../assets/Cursor_and__Users_erikmarty_Projects_Cypress_cypress-shopify.png)
 
 Failure!
 
-![Error](https://www.evernote.com/l/AiE0W0mhkkpLpoSOO2EzsQO4VuqHUyY9zvA)
+![Error](../assets/cypress-shopify.png)
 
 ```
 cy.visit() failed trying to load:
