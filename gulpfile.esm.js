@@ -114,7 +114,15 @@ const sync = (cb) => {
   const { THEMEKIT_STORE, THEMEKIT_DEV_ID } = process.env
 
   bs.init({
-    proxy: `https://${THEMEKIT_STORE}/?preview_theme_id=${THEMEKIT_DEV_ID}`,
+    logLevel: 'debug',
+    proxy: {
+      target: `https://${THEMEKIT_STORE}/?preview_theme_id=${THEMEKIT_DEV_ID}`,
+      proxyRes: [
+          function(proxyRes, req, res) {
+              console.log(proxyRes.headers);
+          }
+      ]
+    },
     files: 'theme_ready',
     reloadDelay: 1000,
     open: false,
